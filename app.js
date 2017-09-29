@@ -9,10 +9,12 @@ app.controller('mainCtrl', function($scope, $http) {
     $scope.from = "";
     $scope.to = "";
     $scope.currentDate = (new Date()).toString();
-    console.log($scope.currentDate);
-    console.log(new Date());
     $scope.data;
        
+    $scope.clearSearch = function () {
+      $scope.from = "";
+      $scope.to = "";
+  };
 
     $scope.search = function(){
       $http.get(`http://104.197.128.152/data/adrequests?from=${$scope.from}&to=${$scope.to}`)
