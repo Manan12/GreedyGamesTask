@@ -1,0 +1,24 @@
+body {
+    padding-top: 70px;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+ }
+
+ .form-control {
+     width: 95% !important;
+ }
+
+ .row {
+     margin-top: 5% !important;
+ }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GreedyGames</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link href="angular-datepicker.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div  ng-app="app">
+            <header ng-include="'header.html'"></header>
+            <div class="container" ng-controller="mainCtrl">
+                    <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <datepicker date-format="yyyy-MM-dd" date-max-limit="{{currentDate}}">
+                                        <input type="text" class="form-control" ng-model="date2" placeholder="From Date">
+                                    </datepicker>
+                                </div>
+                                <div class="col">
+                                    <datepicker  date-format="yyyy-MM-dd">
+                                        <input type="text" class="form-control" ng-model="date" placeholder="To Date">
+                                    </datepicker>
+                                </div>
+                                <div class="col">
+                                        <button class="btn btn-dark" ng-click="search()">Search</button>
+                                </div>
+                            </div>
+                     </form>
+
+                <div class="row" >
+                    <div class="col-md-4">
+                        <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-dark">Details</a>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-dark">Details</a>
+                                </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 20rem;">
+                                <img class="card-img-top" src="https://ak.picdn.net/assets/cms/97e1dd3f8a3ecb81356fe754a1a113f31b6dbfd4-stock-photo-photo-of-a-common-kingfisher-alcedo-atthis-adult-male-perched-on-a-lichen-covered-branch-107647640.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-dark">Details</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <footer ng-include="'footer.html'"></footer>     
+        </div>
+
+        <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="angular-datepicker.js"></script>
+    </body>
+</html>
