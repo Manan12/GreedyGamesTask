@@ -27,4 +27,13 @@ body {
 
  .card {
      margin-bottom: 20px !important;
+     box-shadow: 2px 2px 10px #888888 !important;
  }
+
+  .errspan {
+        float: right;
+        margin-right: 30px;
+        margin-top: -25px;
+        position: relative;
+        z-index: 2;
+    }
