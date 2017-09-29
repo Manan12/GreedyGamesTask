@@ -17,7 +17,7 @@ app.controller('mainCtrl', function($scope, $http) {
     $scope.search = function(){
       $http.get(`http://104.197.128.152/data/adrequests?from=${$scope.from}&to=${$scope.to}`)
          .then(function(res){
-            $scope.data = res.data;
+            $scope.data = res.data.data;
             console.log($scope.data);
           });
     }

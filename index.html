@@ -11,19 +11,19 @@
         <div  ng-app="app">
             <header ng-include="'header.html'"></header>
             <div class="container" ng-controller="mainCtrl">
-                    <form>
+                    <form> 
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-md-3 col-sm-12" style="margin-bottom: 10px;">
                                     <datepicker date-format="yyyy-MM-dd" date-max-limit={{currentDate}} >
                                         <input type="text" class="form-control" ng-model="from" placeholder="From Date">
                                     </datepicker>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-3  col-sm-12" style="margin-bottom: 10px;">
                                     <datepicker  date-format="yyyy-MM-dd" date-max-limit={{currentDate}} >
                                         <input type="text" class="form-control" ng-model="to" placeholder="To Date">
                                     </datepicker>
                                 </div>
-                                <div class="col">
+                                <div class="col-md-2  col-sm-12">
                                     <button class="btn btn-dark" ng-click="search()">Search</button>
                                 </div>
                             </div>
@@ -32,8 +32,9 @@
                 <div class="row" >
                     <div class="col-md-4" ng-repeat="info in data">
                         <div class="card" >
-                            <div class="card-body"  >
-                                <h5>{{info}}</h5>
+                            <div class="card-body" >
+                                <small>Date: {{info.date | date : 'dd-MM-yyyy'}}</small>
+                                <h5>Ad Request: {{info.adrequest}}</h5>
                             </div>
                         </div>
                     </div>

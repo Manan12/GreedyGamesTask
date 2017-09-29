@@ -1,5 +1,5 @@
 body {
-    padding-top: 70px;
+    padding-top: 80px;
     padding-bottom: 70px;
 }
 
@@ -23,4 +23,8 @@ body {
  .row {
      margin-top: 5% !important;
 
+ }
+
+ .card {
+     margin-bottom: 20px !important;
  }
